@@ -4,12 +4,13 @@ public:
     {
         map<char,int> sm,tm;
         int ans=0;
-        for(auto i : s) sm[i]++;
-        for(auto i : t) tm[i]++;
-        for(auto i : sm) 
+        for(auto i : s)
         {
-            ans=ans+i.second;
+            sm[i]++;
+            ans++;
         }
+        
+        for(auto i : t) tm[i]++;
         for(auto i : tm) 
         {
             auto it = sm.find(i.first);
