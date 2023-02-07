@@ -10,10 +10,7 @@ public:
             m[i[0]]=m[i[0]]+i[1];
         for(auto i :  m)
         {
-            vector<int> temp;
-            temp.emplace_back(i.first);
-            temp.emplace_back(i.second);
-            ans.emplace_back(temp);
+            ans.push_back({i.first,i.second});
         }
         return ans;
     }
