@@ -14,11 +14,11 @@ public:
     vector<int> ans;
     void trav(TreeNode* root1)
     {
-        if(!root1) return;
+        if(root1==NULL) return;
         trav(root1->left);
         ans.emplace_back(root1->val);
         trav(root1->right);
-         return;
+        return;
     }
     vector<int> getAllElements(TreeNode* root1, TreeNode* root2) 
     {
