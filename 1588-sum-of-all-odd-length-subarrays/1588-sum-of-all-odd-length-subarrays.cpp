@@ -8,8 +8,8 @@ public:
             for(int j=i;j<nums.size();j++)
             {
                 sum+=nums[j];
-                count++;
-                if(count%2!=0)
+                // count++;
+                if((j-i+1)%2!=0)
                 {
                     ans+=sum;
                 }
